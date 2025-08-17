@@ -1,0 +1,23 @@
+.NewProductBtns {
+  width: 70%;
+  margin-inline: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+
+  button {
+    background: linear-gradient(to right, #ef473a, #cb2d3e) !important;
+    color: #fff;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px 13px !important;
+  }
+  button:hover {
+    transform: translateY(3px);
+    box-shadow: none !important;
+  }
+}

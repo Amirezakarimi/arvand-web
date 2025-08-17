@@ -1,0 +1,32 @@
+.ProfileTableMaker {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ProfileTableMaker tr td {
+  height: 41px;
+  padding: 10px 30px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  font-size: 13px;
+  color: #626262;
+  font-weight: 500;
+}
+.ProfileTableMaker tr:nth-child(2n + 1) td {
+  background: #f9f9f9 !important;
+}
+.ProfileTableMaker input,.ProfileTableMaker select {
+  background-color: #dedede;
+  height: 32px;
+  padding: 6px 15px;
+  border-radius: 6px;
+  width: 100%;
+  
+  font-size: 14px;
+  outline: 0;
+  border: none;
+}
+.ProfileTableMaker a{
+  color: #e60000;
+  text-decoration: none;
+  font-size: 13px;
+}

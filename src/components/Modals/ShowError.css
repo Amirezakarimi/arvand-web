@@ -1,0 +1,39 @@
+.ShowError {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  z-index: 100;
+}
+.ShowError .Content {
+  width: fit-content;
+  padding: 0.8rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.ShowError .Content p {
+  color: black;
+  margin: 0;
+}
+.ShowError .top-p {
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  color: white !important;
+  font-size: 10px;
+  position: absolute;
+  top: 0px;
+  margin: 0;
+}
+
+.ShowError .Content a {
+  opacity: 60%;
+  font-weight: 400;
+}
+.ShowError .Content a:hover {
+  color: orangered !important;
+}

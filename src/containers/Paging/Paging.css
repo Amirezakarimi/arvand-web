@@ -1,0 +1,45 @@
+.Paging {
+  width: 100%;
+  padding-block: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: var(--color-900);
+    color: white;
+  }
+
+  .items-per-page {
+    margin-left: auto;
+
+    label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #454545;
+    }
+    select {
+      padding: 1rem;
+      font-size: 1rem;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
