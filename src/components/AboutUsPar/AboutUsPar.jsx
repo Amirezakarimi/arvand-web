@@ -23,7 +23,7 @@ export default function AboutUsPar(props) {
             <div key={i} className="wrapper">
               <div className="title">
                 <p>
-                  Our <span>{item.title}</span>
+                <span>{item.title}</span>
                 </p>
                 <span className="red-line"></span>
               </div>

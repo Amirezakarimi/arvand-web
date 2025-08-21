@@ -10,38 +10,40 @@ export default function AboutUs() {
   };
   const AboutUsParList = [
     {
-      title: "Introduction",
+      title: "تاریخچه و معرفی شرکت",
       text: [
-        "eWorldtrade is a comprehensive B2B marketplace having over 10 years of expertise in digital branding and web development. The B2B Marketplace currently caters over 7,000,000 registered users and briskly expanding its database of manufacturers, suppliers and companies from all over the world. The digital trading platform is intelligently designed and developed to address fierce business competition by providing a safe, fast, reliable and authentic medium of trading. eWorldTrade is integrated with all new advance features and functionalities that have never been offered by any other B2B portal. To compete with aggressive marketing trends and brand development eWorldTrade is the only B2B portal helping millions of traders in expressing their presence globally.",
+        "از سال 1378 مجموعه پارس پلیمر نوین فعالیت خود را در صنعت لوله و اتصالات با سرلوحه قرار دادن سه اصل : کیفیت، نوآوری، مشتری مداری.",
+        "خلاقیت محوری در ابعاد مختلف این صنعت به ویژه در بعد بازاریابی و فروش جهت افزایش تمایل مشتری به خرید، کاهش ترس از خریداشتباه، برطرف نمودن نیازها، ایجاد حس امنیت، در دسترس بودن و پاسخگویی مجموعه و خدمات سازگار با معیارهای مشتری نیازمند توسعه فعالیت و عبور از اقتصاد سنتی فروشندگی و نماینده محوری و عاملیت به اقتصاد دانشی و اطلاعات بوده.",
+        "با توجه به اینکه صنعت لوله و اتصالات در حال حاضر در حال توسعه و گسترش است و به علت سرعت بالای این صنعت، همین سرعت باعث سرعت بالای توسعه و گسترش مجموعه پارس پلیمر نوین شده است. همچنین با توجه به اینکه صنعت لوله و اتصالات در حال حاضر در حال توسعه و گسترش است و به علت سرعت بالای این صنعت، همین سرعت باعث سرعت بالای توسعه و گسترش مجموعه پارس پلیمر نوین شده است.",
       ],
     },
+    // {
+    //   title: "Company Overview",
+    //   text: [
+    //     "eWorldtrade is structured to be one of the most transparent global B2B marketplace converging millions of potential wholesalers, buyers & sellers under one hood. We are committed to provide authentic, fast and innovative trading solutions with all new and smart features making trading even effective.",
+    //     "eWorldTrade is a distinguished B2B platform bridging buyers with effective digital solutions and services for better brand development. We have redefined the global trade with value added services like Digital Branding, community & reputation management.",
+    //   ],
+    // },
     {
-      title: "Company Overview",
+      title: "کلید موفقیت ما",
       text: [
-        "eWorldtrade is structured to be one of the most transparent global B2B marketplace converging millions of potential wholesalers, buyers & sellers under one hood. We are committed to provide authentic, fast and innovative trading solutions with all new and smart features making trading even effective.",
-        "eWorldTrade is a distinguished B2B platform bridging buyers with effective digital solutions and services for better brand development. We have redefined the global trade with value added services like Digital Branding, community & reputation management.",
-      ],
-    },
-    {
-      title: "Your Key to Success",
-      text: [
-        "We love making brands your customers to take your business to a global level. Eworldtade.com is not merely a B2B portal rather it allows selling to the world by connecting authentic buyers and suppliers featuring exciting services and user-experience.",
+        "کلید موفقیت ما بر سه اصل استوار است: کیفیت پایدار، نوآوری هدفمند و مشتری‌مداری واقعی. با تکیه بر تیم متخصص، پایبندی به استانداردها و بهبود مستمر فرآیندها، محصولاتی ارائه می‌کنیم که هم پایدار و رقابتی‌اند و هم به‌موقع تحویل می‌شوند. شفافیت در همکاری، مسئولیت‌پذیری و تصمیم‌گیری داده‌محور، ما را به شریکی قابل اتکا برای رشد پایدار تبدیل کرده است."
       ],
     },
   ];
   const AboutOur = [
     {
-      title: "Mission",
-      text: "Our mission is to establish a fast and reliable trading platform that would work in the best interest of buyers and suppliers. The organization is focused in overcoming all B2B marketplace challenges and loop holes relentlessly, introducing trading transparency and utmost quality. Delivering unparalleled satisfaction and profitability with guaranteed productivity is what we seek. ",
+      title: "اهداف کسب و کار",
+      text: "مجموعه پارس پلیمر نوین با توجه به اینکه صنعت لوله و اتصالات در حال حاضر در حال توسعه و گسترش است و به علت سرعت بالای این صنعت، همین سرعت باعث سرعت بالای توسعه و گسترش مجموعه پارس پلیمر نوین شده است. همچنین با توجه به اینکه صنعت لوله و اتصالات در حال حاضر در حال توسعه و گسترش است و به علت سرعت بالای این صنعت، همین سرعت باعث سرعت بالای توسعه و گسترش مجموعه پارس پلیمر نوین شده است.",
     },
     {
-      title: "Vision",
-      text: "In harmony with our core values and stake holders, our goal is to be the largest and finest B2B marketplace with bunch of incredible features, unsurpassed services and everlasting support. Acquiring effective digital expertise to help connect traders in developing unique brand persona. ",
+      title: "کسب و کار موفق",
+      text: "کسب و کاری موفق است که جدا از سود خود به رضایت مشتری فکر کند. این احساس رضایت است که مشتری را قانع می کند تا خرید دوباره ای داشته باشد و ما را به آشنایان و دوستان خود معرفی کند. پس از سود لحظه ای خود صرف نظر می کنیم تا به سود پایدار و همیشگی برسیم. باتوجه به پیشرفت علم و دانش و تغییر سبک معاملات همواره مشتریان و مصرف کنندگان با آگاهی کامل و هوشمندانه به دنبال محصولات با کیفیت و قیمت و خدمات ارزانتر هستند.",
     },
-    {
-      title: "Goals",
-      text: "Our goal is to be your ultimate trading partner with safe and innovative trading solutions. With our well-define structure and effective strategy, eWorldTrade gives an opportunity to all business partners be it wholesalers, retailers, buyers, sellers, middlemen to do online safe trade dealings with each other irrelevant of any limitation to time or place. ",
-    },
+    // {
+    //   title: "Goals",
+    //   text: "Our goal is to be your ultimate trading partner with safe and innovative trading solutions. With our well-define structure and effective strategy, eWorldTrade gives an opportunity to all business partners be it wholesalers, retailers, buyers, sellers, middlemen to do online safe trade dealings with each other irrelevant of any limitation to time or place. ",
+    // },
   ];
   return (
     <>
