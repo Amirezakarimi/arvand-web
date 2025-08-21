@@ -5,8 +5,8 @@ import BgBanner from "../../assets/Banners/about-banner.jpg";
 export default function AboutUs() {
   const BannerInfo = {
     Image: BgBanner,
-    title: "About Us",
-    text: "COMPANY OVERVIEW",
+    title: "آروند پلیمر",
+    text: "درباره ما",
   };
   const AboutUsParList = [
     {

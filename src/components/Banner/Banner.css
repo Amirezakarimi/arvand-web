@@ -4,8 +4,8 @@
   .Banner-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    direction: ltr;
+    justify-content: flex-end;
+    direction: rtl;
   }
 }
 .Banner .text-wrapper {
@@ -21,8 +21,9 @@
   .text {
     color: white;
     margin-bottom: 0.5rem;
-    text-align: left;
-    font-size: 0.8rem;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 }
 .Banner button {

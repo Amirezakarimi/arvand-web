@@ -1,5 +1,6 @@
 .SetOrderCol {
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
+  width: 100%;
   background-color: white;
   height: 100%;
   font-family: vazir, sans-serif;

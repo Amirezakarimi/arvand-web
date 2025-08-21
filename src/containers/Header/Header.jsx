@@ -120,6 +120,14 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
+
+              <button
+                className="request-btn"
+                onClick={() => setShowOrderModal(true)}
+              >
+                ثبت درخواست
+              </button>
+
               <div className="wrapper ul-wrapper mobile-icon-wrapper">
                 <div className="ul-item">
                   <i className="fa-solid fa-circle-user"></i>

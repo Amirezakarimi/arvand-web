@@ -20,9 +20,6 @@ export default function Footer() {
                 <a href="#">دفاتر نمایندگی</a>
               </li>
               <li>
-                <a href="#">کشورها</a>
-              </li>
-              <li>
                 <a href="#">مرکز آموزش</a>
               </li>
               <li>
@@ -59,17 +56,11 @@ export default function Footer() {
               <li>
                 <a href="#">+9811223344</a>
               </li>
-              <li>
-                <a href="#">آروند پلیمر</a>
-              </li>
-              <li>
-                <a href="#">آروند پلیمر</a>
-              </li>
             </ul>
           </div>
           <div className="ul-list ul-pic">
             <ul>
-              <li>
+              {/* <li>
                 <a href="#">
                   <img src={banner1} alt="banner1" />
                 </a>
@@ -88,7 +79,7 @@ export default function Footer() {
                 <a href="#">
                   <img src={banner4} alt="banner4" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -96,9 +87,9 @@ export default function Footer() {
           <a href="#">
             <img src="./Logo.png" alt="Logo" style={{ maxWidth: "150px" }} />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <img src={Gp} alt="googlePlay" style={{ minWidth: "140px" }} />
-          </a>
+          </a> */}
           <ul className="ul-icon">
             <li>
               <a href="#">

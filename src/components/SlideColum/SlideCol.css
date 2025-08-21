@@ -1,7 +1,7 @@
 .embla {
   overflow: hidden;
   height: 100%;
-  width: 50%;
+  width: 100%;
   max-width: 50%;
   direction: ltr;
 }

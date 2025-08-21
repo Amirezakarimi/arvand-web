@@ -49,9 +49,6 @@
   gap: 1rem;
 }
 @media (max-width: 800px) {
-  .AboutUsPar .AboutUsPar-container{
-    
-  }
   .AboutUsPar .container{
     flex-direction: column;
   }

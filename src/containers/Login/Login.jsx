@@ -15,11 +15,9 @@ export default function Login() {
         }}
       >
         <img src="/logoRaw.png" alt="logo" className="login-logo" />
-        <p className="title">Welcome to eWorldTrade</p>
+        <p className="title">آروند پلیمر</p>
         <p className="desc">
-          To achieve our mission we provide all the necessary functionalities to
-          buyers and sellers that help them in developing the voice of their
-          business and to expand worldwide.
+          ما تولیدکننده لوله، اتصالات و شیرآلات صنعتی و ساختمانی هستیم. مأموریت ما ارائه محصولات باکیفیت و مطابق استانداردهای روز، با تحویل سریع و قیمت رقابتی است. با تکیه بر تیم متخصص و شبکه فروش گسترده، پاسخ‌گوی نیاز پروژه‌های ساختمانی تا صنایع بزرگ هستیم.
         </p>
       </div>
     </div>

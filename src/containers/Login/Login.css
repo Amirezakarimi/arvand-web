@@ -1,9 +1,28 @@
+.Login,
+.Login p,
+.Login span,
+.Login button,
+.Login a,
+.Login label,
+.Login input,
+.Login select,
+.Login textarea,
+.Login .title,
+.Login .desc {
+  font-family: vazir, sans-serif;
+}
+
+.Login input::placeholder,
+.Login textarea::placeholder {
+  font-family: vazir, sans-serif;
+}
 .Login {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 
   .banner {
     width: 40%;
