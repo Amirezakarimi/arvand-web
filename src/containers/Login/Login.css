@@ -151,7 +151,7 @@
       padding: 8px 16px;
       border-radius: 5px;
       box-shadow: 0 4px 16px 0 rgba(213, 39, 56, 0.18);
-      transition: all ease-in-out 0.5s;
+      transition: all ease-in-out 0.2s;
       font-weight: 400;
       text-align: center;
       white-space: nowrap;
@@ -163,7 +163,6 @@
       -webkit-box-shadow: 0 9px 16px 0 rgba(213, 39, 56, 0.18) !important;
       box-shadow: 0 9px 16px 0 rgba(213, 39, 56, 0.18) !important;
       background: #dc3545;
-      transform: scale(0.95);
     }
   }
   .other-connect {
