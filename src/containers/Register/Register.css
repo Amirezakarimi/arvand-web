@@ -1,0 +1,91 @@
+.Register,
+.Register p,
+.Register span,
+.Register button,
+.Register a,
+.Register label,
+.Register input,
+.Register select,
+.Register textarea,
+.Register .title,
+.Register .desc {
+  font-family: vazir, sans-serif;
+}
+
+.Register input::placeholder,
+.Register textarea::placeholder {
+  font-family: vazir, sans-serif;
+}
+
+.Register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.Register .banner {
+  width: 40%;
+  height: 100%;
+}
+
+.Register .RegisterForm {
+  width: 60%;
+  height: 100%;
+}
+
+.Register .banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 23px 41px;
+}
+
+.Register .banner img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 23px;
+  left: 41px;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+.Register .banner p {
+  width: 100%;
+  text-align: right;
+}
+
+.Register .banner .title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.Register .banner .desc {
+  font-size: 1rem;
+  margin: 0.5rem 0 3.5rem 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.Register .RegisterForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .Register .banner {
+    display: none;
+  }
+  
+  .Register .RegisterForm {
+    width: 100%;
+  }
+}

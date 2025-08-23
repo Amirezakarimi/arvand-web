@@ -32,3 +32,4 @@ export { default as PPLTableActions } from "./PanelProductList/PPLTableComponent
 export { default as ProductBasic } from "./ProductInfoComponents/ProductBasic/ProductBasic";
 export { default as ProductDetails } from "./ProductInfoComponents/ProductDetails/ProductDetails";
 export { default as ProductSupplier } from "./ProductInfoComponents/ProductSupplier/ProductSupplier";
+export { default as RegisterForm } from "./RegisterForm/RegisterForm";

@@ -44,7 +44,7 @@ export default function LoginForm() {
             ))}
           </div>
           <div className="register-wrapper">
-            <a href="">ثبت نام نکرده اید؟</a>
+            <a href="/register">ثبت نام نکرده اید؟</a>
           </div>
         </div>
       </div>

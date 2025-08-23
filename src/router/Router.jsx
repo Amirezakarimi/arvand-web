@@ -12,6 +12,7 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import Product from "../pages/Product/Product";
 import MainCategory from "../pages/MainCategory/MainCategory";
 import LoginPage from "../pages/LoginPage/LoginPage";
+import RegisterPage from "../pages/RegisterPage/RegisterPage";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -74,6 +75,10 @@ const Router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
   },
 ]);
 

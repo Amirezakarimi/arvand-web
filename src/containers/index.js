@@ -15,3 +15,4 @@ export { default as PPLTable } from "./PPLTable/PPLTable";
 export { default as ProductInfo } from "./ProductInfo/ProductInfo";
 export { default as Login } from "./Login/Login";
 export { default as Paging } from "./Paging/Paging";
+export { default as Register } from "./Register/Register";
