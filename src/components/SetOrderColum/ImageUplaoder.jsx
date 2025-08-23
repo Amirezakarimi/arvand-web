@@ -73,6 +73,7 @@ const ImageUplaoder = ({ handleChangeForm }) => {
       <input
         type="file"
         id="image"
+        accept="image/*"
         onChange={handleUploadClick}
         disabled={loading}
       />

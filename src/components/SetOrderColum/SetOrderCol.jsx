@@ -46,8 +46,8 @@ export default function SetOrderCol() {
       <div className="container">
         <p className="title">ثبت درخواست</p>
         <div className="input-container">
-          <div className="input-wrapper">
-            <label htmlFor="category">نیازمندی</label>
+          {/* <div className="input-wrapper">
+            <label htmlFor="category">نوع مشتری</label>
             <select
               id="category"
               onChange={(e) => handleChangeForm("reason", e.target.value)}
@@ -60,12 +60,43 @@ export default function SetOrderCol() {
                   </option>
                 ))}
             </select>
+          </div> */}
+          <div className="input-wrapper">
+            <label htmlFor="nameFamily">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="nameFamily"
+              style={{ textAlign: "right" }}
+              pattern="[آ-یa-zA-Z\s]+"
+              title="فقط حروف فارسی و انگلیسی مجاز است"
+              onKeyPress={(e) => {
+                const char = String.fromCharCode(e.which);
+                const persianRegex = /[آ-ی]/;
+                const englishRegex = /[a-zA-Z\s]/;
+                if (!persianRegex.test(char) && !englishRegex.test(char)) {
+                  e.preventDefault();
+                }
+              }}
+              onChange={(e) => {
+                const value = e.target.value.replace(/[^آ-یa-zA-Z\s]/g, '');
+                handleChangeForm("nameFamily", value);
+              }}
+            />
           </div>
-          <div className="input-wrapper W50">
+          <div className="input-wrapper">
+            <label htmlFor="phone">شماره تماس</label>
+            <input
+              type="number"
+              id="phone"
+              style={{ textAlign: "left" }}
+              onChange={(e) => handleChangeForm("mobile", e.target.value)}
+            />
+          </div>
+          <div className="input-wrapper">
             <label htmlFor="date">تاریخ تحویل</label>
             <DatePickerMui handleAction={handleChangeForm} />
           </div>
-          <div className="input-wrapper W50">
+          {/* <div className="input-wrapper W50">
             <label htmlFor="count">حجم خرید</label>
             <select
               id="count"
@@ -79,26 +110,8 @@ export default function SetOrderCol() {
                   </option>
                 ))}
             </select>
-          </div>
-          <div className="input-wrapper">
-            <label htmlFor="phone">شماره تماس</label>
-            <input
-              type="number"
-              id="phone"
-              style={{ textAlign: "left" }}
-              onChange={(e) => handleChangeForm("mobile", e.target.value)}
-            />
-          </div>
-          <div className="input-wrapper W50">
-            <label htmlFor="company">شرکت</label>
-            <input
-              type="text"
-              id="company"
-              style={{ textAlign: "right" }}
-              onChange={(e) => handleChangeForm("company", e.target.value)}
-            />
-          </div>
-          <div className="input-wrapper W50">
+          </div> */}
+          {/* <div className="input-wrapper W50">
             <label htmlFor="metod">طریقه خرید</label>
             <select
               id="metod"
@@ -112,7 +125,7 @@ export default function SetOrderCol() {
                   </option>
                 ))}
             </select>
-          </div>
+          </div> */}
           <div className="input-wrapper">
             <ImageUplaoder handleChangeForm={handleChangeForm} />
           </div>

@@ -5,6 +5,7 @@ import banner2 from "../../assets/Footer/Banner-2.webp";
 import banner3 from "../../assets/Footer/Banner-3.webp";
 import banner4 from "../../assets/Footer/Banner-4.webp";
 import Gp from "../../assets/Footer/google-play.webp";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -14,7 +15,7 @@ export default function Footer() {
             <div className="ul-header">درباره ما</div>
             <ul>
               <li>
-                <a href="#">درباره آروند پلیمر</a>
+                <Link to="/about-us">درباره آروند پلیمر</Link>
               </li>
               <li>
                 <a href="#">دفاتر نمایندگی</a>
@@ -41,9 +42,6 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#">سیاست فهرست محصولات</a>
-              </li>
-              <li>
-                <a href="#">آروند پلیمر</a>
               </li>
             </ul>
           </div>

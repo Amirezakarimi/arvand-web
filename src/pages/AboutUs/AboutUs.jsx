@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Banner, AboutUsPar } from "../../components";
 
 import BgBanner from "../../assets/Banners/about-banner.jpg";
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const BannerInfo = {
     Image: BgBanner,
     title: "آروند پلیمر",

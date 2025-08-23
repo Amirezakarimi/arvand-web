@@ -1,7 +1,8 @@
 import * as React from "react";
 import useForkRef from "@mui/utils/useForkRef";
 import Button from "@mui/material/Button";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import GlobalStyles from "@mui/material/GlobalStyles";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDateFnsJalali } from "@mui/x-date-pickers/AdapterDateFnsJalali";
 import { format } from "date-fns-jalali";
@@ -12,6 +13,12 @@ import {
   useParsedFormat,
   usePickerContext,
 } from "@mui/x-date-pickers/hooks";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "vazir, sans-serif",
+  },
+});
 
 function ButtonDateField(props) {
   const { internalProps, forwardedProps } = useSplitFieldProps(props, "date");
@@ -53,6 +60,7 @@ function ButtonDateField(props) {
         borderRadius: "6px",
         boxShadow: "1px 2px 3px #5d617624",
         fontSize: "0.75rem",
+        fontFamily: "vazir, sans-serif",
         outline: 0,
         "&:hover": {
           backgroundColor: "#e3f2fd", // Lighter blue on hover
@@ -77,16 +85,25 @@ function ButtonFieldDatePicker(props) {
 
 export default function DatePickerMui(props) {
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFnsJalali}>
-      <ButtonFieldDatePicker
-        onChange={(value) => {
-          // Format the selected date in Jalali format (e.g., 1404/02/14)
-          const formattedValue = value
-            ? format(new Date(value), "yyyy/MM/dd")
-            : null;
-          props.handleAction("loadDate", formattedValue);
+    <ThemeProvider theme={theme}>
+      <GlobalStyles
+        styles={{
+          ".MuiPickersLayout-root, .MuiDateCalendar-root, .MuiPickersToolbar-root, .MuiPickersCalendarHeader-label, .MuiDayCalendar-weekDayLabel, .MuiPickersDay-root, .MuiTypography-root, .MuiButtonBase-root": {
+            fontFamily: "vazir, sans-serif",
+          },
         }}
       />
-    </LocalizationProvider>
+      <LocalizationProvider dateAdapter={AdapterDateFnsJalali}>
+        <ButtonFieldDatePicker
+          onChange={(value) => {
+            // Format the selected date in Jalali format (e.g., 1404/02/14)
+            const formattedValue = value
+              ? format(new Date(value), "yyyy/MM/dd")
+              : null;
+            props.handleAction("loadDate", formattedValue);
+          }}
+        />
+      </LocalizationProvider>
+    </ThemeProvider>
   );
 }

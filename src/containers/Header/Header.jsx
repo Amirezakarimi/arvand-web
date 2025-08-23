@@ -25,7 +25,7 @@ export default function Header() {
           <div className="order-modal-overlay" onClick={() => setShowOrderModal(false)}>
             <div className="order-modal" onClick={(e) => e.stopPropagation()}>
               <div className="modal-header">
-                <h3>ثبت درخواست</h3>
+                <h3>ثبت سفارش</h3>
                 <button 
                   className="close-btn"
                   onClick={() => setShowOrderModal(false)}
@@ -74,19 +74,13 @@ export default function Header() {
           </div>
         </div>
         <div className="wrapper ul-wrapper">
-          <div className="ul-item">
+          <div 
+            className="ul-item hover"
+            onClick={() => (window.location.href = "/login")}
+            style={{ cursor: "pointer" }}
+          >
             <i className="fa-solid fa-circle-user"></i>
             <div className="p-wrapper">
-              <p>
-                <span
-                  className="hover"
-                  onClick={() => (window.location.href = "/login")}
-                >
-                  ورود
-                </span>
-                <span> / </span>
-                <span className="hover">پیوستن</span>
-              </p>
               <p>حساب کاربری</p>
             </div>
           </div>
@@ -99,13 +93,13 @@ export default function Header() {
               <p className="auto-hover">پیام ها</p>
             </div>
           </div>
-          {/* دکمه ثبت درخواست */}
+          {/* دکمه ثبت سفارش */}
           <div className="ul-item">
             <button 
               className="request-btn"
               onClick={() => setShowOrderModal(true)}
             >
-              ثبت درخواست
+              ثبت سفارش
             </button>
           </div>
         </div>
@@ -125,7 +119,7 @@ export default function Header() {
                 className="request-btn"
                 onClick={() => setShowOrderModal(true)}
               >
-                ثبت درخواست
+                ثبت سفارش
               </button>
 
               <div className="wrapper ul-wrapper mobile-icon-wrapper">
